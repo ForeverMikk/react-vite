@@ -1,3 +1,4 @@
+// Es para configuraciones especificas de Vite
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
