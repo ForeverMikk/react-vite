@@ -11,9 +11,15 @@ const App = ({title, subttitle}) => {
     )
 }
 
+// Aqui declaramos los tipos de las props y si son requereidos
 App.propTypes = {
     title: PropTypes.string.isRequired,
     subtitle: PropTypes.number
+}
+
+App.defaultProps = {
+    title: "No hay titulo",
+    subtitle: 133
 }
 
 export default App;
