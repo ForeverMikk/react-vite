@@ -1,7 +1,6 @@
+import PropTypes, { string } from 'prop-types';
 
 const App = ({title, subttitle}) => {
-
-    console.log(title);
 
     return (
         // Pasando props a traves de un componente
@@ -10,6 +9,11 @@ const App = ({title, subttitle}) => {
             <p>{subttitle}</p>
         </>
     )
+}
+
+App.propTypes = {
+    title: PropTypes.string.isRequired,
+    subtitle: PropTypes.number
 }
 
 export default App;
