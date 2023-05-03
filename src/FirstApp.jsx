@@ -1,12 +1,13 @@
 
-const App = () => {
+const App = ({title, subttitle}) => {
+
+    console.log(title);
 
     return (
-        // Componente Frafment <></> se usa para encapsular tu componente en React
-        // sin necesitar un <div> o alguna otra etiqueta
+        // Pasando props a traves de un componente
         <>
-            <h1>Michael</h1>
-            <p>Soy un subtutilo</p>
+            <h1>{title}</h1>
+            <p>{subttitle}</p>
         </>
     )
 }

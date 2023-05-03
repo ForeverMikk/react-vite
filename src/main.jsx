@@ -6,6 +6,6 @@ import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
-        <App />
+        <App title='hola' subttitle={1 + 125}/>
     </React.StrictMode>
 )
