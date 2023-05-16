@@ -18,7 +18,8 @@ const CounterApp = ({value}) => {
             <h2>{counter}</h2>
             <button onClick={ () => handleChange(true) }>+1</button>
             <button onClick={ () => handleChange(false) }>-1</button>
-            <button onClick={ handleReset }>Reset</button>
+            {/* // con aria label apuntas mas facilmente a un elemento si buscas por rol */}
+            <button aria-label='btn-reset' onClick={ handleReset }>Reset</button>
         </>
     )
 }
